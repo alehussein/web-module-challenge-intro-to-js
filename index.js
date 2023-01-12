@@ -147,9 +147,9 @@ function hungryDog(age, weight){
   else if(age >= 1 && weight >= 6 && weight <= 10){return weight * 0.04;}
   else if(age >= 1 && weight >= 11 && weight <= 15){return weight * 0.03;}
   else if(age >= 1 && weight > 15){return weight * 0.02;}
-  else if(age < 1 && age >= 0.16 && age <= 0.33){return weight * 0.1;}
-  else if(age < 1 && age > 0.33 && age <= 0.58){return weight * 0.05;}
-  else if(age < 1 && age > 0.58){return weight * 0.04;}
+  else if(age < 1 && age >= 0.583){return weight * 0.04;}
+  else if(age < 0.583 && age >= 0.333){return weight * 0.05;}
+  else if(age < 0.333){return weight * 0.10;}
 }
 console.log("Task 3", hungryDog(1, 15));
 
@@ -272,7 +272,7 @@ function grade(score){
   else if(score <= 89 && score >= 80){return ('you got a B');}
   else if(score <= 79 && score >= 70){return ('you got a C');}
   else if(score <= 69 && score >= 60){return ('you got a D');}
-  else if(score <= 59){return ('you got a F')}
+  else if(score <= 59){return ('you got an F')}
   }
   
   console.log("Task 7:", grade(100));
